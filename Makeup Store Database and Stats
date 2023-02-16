@@ -1,0 +1,25 @@
+CREATE TABLE makeupstore (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, aisle INTEGER, amount INTEGER); 
+
+INSERT INTO makeupstore VALUES (1, "mascara", 12, 2, 5); 
+INSERT INTO makeupstore VALUES (2, "lipstick", 7, 5, 10);
+INSERT INTO makeupstore VALUES (3, "concealer", 3, 7, 15);
+INSERT INTO makeupstore VALUES (4, "lipbalm", 2, 9, 25);
+INSERT INTO makeupstore VALUES (5, "eyeshadow", 3, 8, 18);
+INSERT INTO makeupstore VALUES (6, "foundation", 7, 4, 30); 
+INSERT INTO makeupstore VALUES (7, "eyeliner", 10, 1, 20);
+INSERT INTO makeupstore VALUES (8, "lipliner", 8, 5, 17);
+INSERT INTO makeupstore VALUES (9, "brow liner", 15, 6, 30);
+INSERT INTO makeupstore VALUES (10, "face spray", 30, 3, 50);
+INSERT INTO makeupstore VALUES (11, "primer", 25, 2, 60); 
+INSERT INTO makeupstore VALUES (12, "blush", 15, 7, 40);
+INSERT INTO makeupstore VALUES (13, "bronzer", 21, 8, 20); 
+
+--display the database ordered by price:
+SELECT * FROM makeupstore ORDER BY cost
+
+what is the total cost to buy each item?
+;SELECT SUM(COST) FROM makeupstore; 
+
+
+
+
